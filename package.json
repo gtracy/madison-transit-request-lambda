@@ -1,0 +1,22 @@
+{
+    "name": "madison-transit-request-lambda",
+    "version": "1.0.0",
+    "description": "Lambda function which processes API requests piped through SQS",
+    "main": "index.js",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gtracy/madison-transit-request-lambda.git"
+    },
+    "author": "Greg Tracy",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/gtracy/madison-transit-request-lambda/issues"
+    },
+    "homepage": "https://github.com/gtracy/madison-transit-request-lambda#readme",
+    "dependencies": {
+        "aws-sdk": "^2.1048.0",
+        "pino": "^7.6.3",
+        "underscore": "^1.13.1"
+    }
+}
