@@ -10,6 +10,7 @@ const { SageMakerFeatureStoreRuntime } = require('aws-sdk');
 AWS.config.update(config.getAWSConfig())
 
 // messageAttributes = {
+//   id: {}
 //   devKey: {}
 //   stopid: {}
 //   api: {}
@@ -34,7 +35,7 @@ exports.handler = async function(event, context) {
 }
 
 async function putDynamo(message_attributes) {
-    console.dir(message_attributes);
+    logger.info(message_attributes);
 
     var ddb = new AWS.DynamoDB({apiVersion: '2012-08-10'});
     var params = {
@@ -48,10 +49,10 @@ async function putDynamo(message_attributes) {
 
     try {
         let result = await ddb.putItem(params).promise();
-        logger.info(result);
+        logger.info(result,"dynamo put success");
         return;
     } catch (err) {
-        logger.error(err);
+        logger.error(err,"dynamo put FAIL");
         return;
     }
 

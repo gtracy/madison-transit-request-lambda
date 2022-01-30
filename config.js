@@ -3,7 +3,7 @@
 module.exports = {
 
     getTableName : function getTableName() {
-        return 'SMB_API_Request_Log';
+        return 'API_request_log';
     },
 
     getEnv : function getEnv() {
