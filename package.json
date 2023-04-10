@@ -15,7 +15,7 @@
     },
     "homepage": "https://github.com/gtracy/madison-transit-request-lambda#readme",
     "dependencies": {
-        "aws-sdk": "^2.1048.0",
+        "aws-sdk": "^2.1354.0",
         "pino": "^7.6.3",
         "underscore": "^1.13.1"
     }
